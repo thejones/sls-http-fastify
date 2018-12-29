@@ -2,7 +2,7 @@
   "name": "sls-http-fastify",
   "version": "1.8.0",
   "description": "Use fastify with AWS",
-  "main": "sls-hapi-fastify.js",
+  "main": "sls-http-fastify.js",
   "engines": {
     "node": ">=8.0"
   },
@@ -18,8 +18,7 @@
     "posttest": "eslint .",
     "postpublish": "git push origin master --tags"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "author": "Alex Jones",
   "contributors": [
     "Doug Moscrop (https://github.com/dougmoscrop)",
@@ -40,7 +39,7 @@
     "chai": "^4.2.0",
     "eslint": "^5.7.0",
     "eslint-plugin-mocha": "^5.2.0",
-    "express": "^4.16.4",x
+    "express": "^4.16.4",
     "get-stream": "^4.0.0",
     "hapi": "^17.6.0",
     "inversify": "^5.0.1",
@@ -59,7 +58,7 @@
     "on-headers": "^1.0.1",
     "reflect-metadata": "^0.1.12",
     "restana": "^2.3.0",
-    "sails": "^1.0.2",
+    "sails": "^1.1.0",
     "sinon": "^7.0.0"
   },
   "dependencies": {}
