@@ -15,7 +15,6 @@ module.exports = (app) => {
 
     const res = await app.inject(options);
 
-    console.log(res)
     const response = {
       statusCode: res.statusCode,
       body: res.body

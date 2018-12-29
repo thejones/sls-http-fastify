@@ -1,6 +1,6 @@
 {
   "name": "sls-http-fastify",
-  "version": "1.8.0",
+  "version": "0.0.1",
   "description": "Use fastify with AWS",
   "main": "sls-http-fastify.js",
   "engines": {
