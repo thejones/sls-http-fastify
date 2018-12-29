@@ -1,0 +1,26 @@
+{
+  "name": "integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "asdf.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "get-stream": "^3.0.0",
+    "koa": "^1.4.0"
+  },
+  "devDependencies": {
+    "got": "^8.3.0",
+    "intercept-stdout": "^0.1.2",
+    "serverless": "^1.26.1",
+    "serverless-plugin-custom-binary": "github:dougmoscrop/serverless-plugin-custom-binary#9763be857d5729ce1bd7",
+    "supertest": "^3.1.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}

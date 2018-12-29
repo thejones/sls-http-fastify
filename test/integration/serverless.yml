@@ -1,0 +1,33 @@
+service: serverless-http-test
+
+provider:
+  name: aws
+  runtime: ${env:RUNTIME}
+
+plugins:
+  - serverless-plugin-custom-binary
+
+custom:
+  apiGateway:
+    binaryMediaTypes:
+      - image/png
+
+package:
+  excludeDevDependencies: false
+
+functions:
+  express:
+    handler: express.handler
+    events:
+      - http: ANY /express
+  koa:
+    handler: koa.handler
+    events:
+      - http: ANY /koa
+  binary:
+    handler: binary.handler
+    events:
+      - http:
+          path: /binary
+          method: ANY
+          contentHandling: CONVERT_TO_BINARY
