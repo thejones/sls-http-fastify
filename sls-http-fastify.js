@@ -13,7 +13,15 @@ module.exports = (app) => {
     };
 
 
-    return await app.inject(options);
+    const res = await app.inject(options);
+
+    console.log(res)
+    const response = {
+      statusCode: res.statusCode,
+      body: res.body
+    };
+
+    return response;
     
   };
 
