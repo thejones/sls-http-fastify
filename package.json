@@ -1,17 +1,17 @@
 {
-  "name": "serverless-http",
+  "name": "sls-http-fastify",
   "version": "1.8.0",
-  "description": "Use existing web application frameworks in serverless environments",
-  "main": "serverless-http.js",
+  "description": "Use fastify with AWS",
+  "main": "sls-hapi-fastify.js",
   "engines": {
-    "node": ">=6.0"
+    "node": ">=8.0"
   },
   "directories": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dougmoscrop/serverless-http"
+    "url": "https://github.com/thejones/sls-http-fastify"
   },
   "scripts": {
     "test": "nyc mocha",
@@ -19,19 +19,8 @@
     "postpublish": "git push origin master --tags"
   },
   "keywords": [
-    "serverless",
-    "serverless applications",
-    "koa",
-    "express",
-    "connect",
-    "api gateway",
-    "lambda",
-    "aws",
-    "aws lambda",
-    "amazon",
-    "amazon web services"
   ],
-  "author": "Doug Moscrop <doug.moscrop@gmail.com> (http://www.github.com/dougmoscrop)",
+  "author": "Alex Jones",
   "contributors": [
     "Doug Moscrop (https://github.com/dougmoscrop)",
     "Kevin Groat (https://github.com/kgroat)",
@@ -44,14 +33,14 @@
     "Mark Vayngrib (https://github.com/mvayngrib)",
     "Tamás Máhr (https://github.com/tamasmahr)"
   ],
-  "homepage": "https://github.com/dougmoscrop/serverless-http",
+  "homepage": "https://github.com/thejones/sls-http-fastify",
   "license": "MIT",
   "devDependencies": {
     "body-parser": "^1.18.3",
     "chai": "^4.2.0",
     "eslint": "^5.7.0",
     "eslint-plugin-mocha": "^5.2.0",
-    "express": "^4.16.4",
+    "express": "^4.16.4",x
     "get-stream": "^4.0.0",
     "hapi": "^17.6.0",
     "inversify": "^5.0.1",
